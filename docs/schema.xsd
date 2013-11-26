@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+     <xs:simpleType name="Text">
+          <xs:restriction base="xs:string">
+               <xs:pattern value="[\S\s]*"/>
+          </xs:restriction>
+     </xs:simpleType>
+
+     <xs:complexType name="a">
+          <xs:simpleContent>
+               <xs:extension base="Text">
+                    <xs:attribute name="sbirka" type="xs:gYear" use="required"/>
+                    <xs:attribute name="cislo" type="xs:positiveInteger" use="required"/>
+               </xs:extension>
+          </xs:simpleContent>
+     </xs:complexType>
+
+     <xs:complexType name="paragraf">
+          <xs:simpleContent>
+               <xs:extension base="Text">
+                    <xs:attribute name="cislo" type="xs:positiveInteger" use="required"/>
+               </xs:extension>
+          </xs:simpleContent>
+     </xs:complexType>
+
+     <xs:complexType name="odstavec" mixed="true">
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+               <xs:element name="a" type="a"/>
+          </xs:choice>
+          <xs:attribute name="cislo" type="xs:positiveInteger" use="required"/>
+     </xs:complexType>
+
+     <xs:complexType name="clanek" mixed="true">
+          <xs:sequence>
+               <xs:element name="odstavec" type="odstavec" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:sequence>
+          <xs:attribute name="cislo" type="xs:positiveInteger" use="required"/>
+     </xs:complexType>
+
+     <!-- Novel -->
+     <xs:complexType name="novela">
+          <xs:choice>
+               <xs:element name="paragraf" type="paragraf" minOccurs="0" maxOccurs="unbounded"/>
+          </xs:choice>
+          <xs:attribute name="sbirka" type="xs:gYear" use="required"/>
+          <xs:attribute name="cislo" type="xs:positiveInteger" use="required"/>
+     </xs:complexType>
+
+     <!-- Root types -->
+     <xs:complexType name="ustavni_dekret">
+          <xs:sequence>
+               <xs:element name="paragraf" type="paragraf" minOccurs="1" maxOccurs="unbounded"/>
+          </xs:sequence>
+          <xs:attribute name="nazev" type="xs:string" use="required"/>
+          <xs:attribute name="sbirka" type="xs:gYear" use="required"/>
+          <xs:attribute name="castka" type="xs:positiveInteger" use="required"/>
+          <xs:attribute name="cislo" type="xs:positiveInteger" use="required"/>
+          <xs:attribute name="datum_schvaleni" type="xs:date" use="required"/>
+          <xs:attribute name="datum_platnosti" type="xs:date" use="required"/>
+          <xs:attribute name="datum_ucinnosti" type="xs:date" use="required"/>
+     </xs:complexType>
+
+     <xs:complexType name="ustavni_zakon">
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+               <xs:element name="clanek" type="clanek"/>
+               <xs:element name="novela" type="novela"/>
+          </xs:choice>
+          <xs:attribute name="nazev" type="xs:string" use="required"/>
+          <xs:attribute name="sbirka" type="xs:gYear" use="required"/>
+          <xs:attribute name="castka" type="xs:positiveInteger" use="required"/>
+          <xs:attribute name="cislo" type="xs:positiveInteger" use="required"/>
+          <xs:attribute name="datum_schvaleni" type="xs:date" use="required"/>
+          <xs:attribute name="datum_platnosti" type="xs:date" use="required"/>
+          <xs:attribute name="datum_ucinnosti" type="xs:date" use="required"/>
+     </xs:complexType>
+
+     <xs:complexType name="zakon">
+     </xs:complexType>
+
+     <xs:complexType name="vyhlaska" mixed="true">
+          <xs:attribute name="nazev" type="xs:string" use="required"/>
+          <xs:attribute name="sbirka" type="xs:gYear" use="required"/>
+          <xs:attribute name="castka" type="xs:positiveInteger" use="required"/>
+          <xs:attribute name="cislo" type="xs:positiveInteger" use="required"/>
+          <xs:attribute name="datum_schvaleni" type="xs:date" use="required"/>
+          <xs:attribute name="datum_platnosti" type="xs:date" use="required"/>
+          <xs:attribute name="datum_ucinnosti" type="xs:date" use="required"/>
+     </xs:complexType>
+
+     <xs:complexType name="prezidentsky_dekret">
+          <xs:attribute name="nazev" type="xs:string" use="required"/>
+          <xs:attribute name="sbirka" type="xs:gYear" use="required"/>
+          <xs:attribute name="castka" type="xs:positiveInteger" use="required"/>
+          <xs:attribute name="cislo" type="xs:positiveInteger" use="required"/>
+          <xs:attribute name="datum_schvaleni" type="xs:date" use="required"/>
+          <xs:attribute name="datum_platnosti" type="xs:date" use="required"/>
+          <xs:attribute name="datum_ucinnosti" type="xs:date" use="required"/>
+     </xs:complexType>
+
+     <!-- Root -->
+     <xs:element name="ustavni_dekret" type="ustavni_dekret"/>
+     <xs:element name="ustavni_zakon" type="ustavni_zakon"/>
+     <xs:element name="zakon" type="zakon"/>
+     <xs:element name="vyhlaska" type="vyhlaska"/>
+     <xs:element name="prezidentsky_dekret" type="prezidentsky_dekret"/>
+
+</xs:schema>

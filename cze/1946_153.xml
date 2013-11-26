@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<ustavni_zakon
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:noNamespaceSchemaLocation="https://github.com/pirati-cz/docs/schema.xsd"
+     nazev="Ústavní zákon, jímž se mění ústavní dekret presidenta republiky ze dne 2. dubna 1945, č. 1 Sb., o nové organisaci vlády a ministerstev v době přechodné"
+     sbirka="1946"
+     castka="64"
+     cislo="153"
+     datum_schvaleni="1946-07-10"
+     datum_platnosti="1946-07-17"
+     datum_ucinnosti="1946-07-17">
+     <clanek cislo="1">
+          <odstavec cislo="1">
+               V § 2 ústavního dekretu č. <a cislo="1" sbirka="1945">1/1945</a> Sb. ve výpočtu ministerstev se provádějí tyto změny:
+               1. za ministerstvo dopravy zařazuje se ministerstvo techniky,
+               2. ministerstvo ochrany práce a sociální péče označuje se jako ministerstvo sociální péče,
+               3. na konci výpočtu připojuje se ministerstvo pro sjednocení zákonů.
+          </odstavec>
+          <odstavec cislo="2">
+               V § 3 téhož ústavního dekretu připojuje se na konci tato věta: "Místo státního tajemníka může zůstati neobsazeno".
+          </odstavec>
+     </clanek>
+     <clanek cislo="2">
+          Tento ústavní zákon nabývá účinnosti dnem vyhlášení; provedou jej všichni členové vlády.
+     </clanek>
+     <novela sbirka="1945" cislo="1">
+          <paragraf cislo="2">
+               V čele státní správy jsou tato ministerstva:
+               ministerstvo zahraničních věcí,
+               ministerstvo národní obrany,
+               ministerstvo zahraničního obchodu,
+               ministerstvo vnitra,
+               ministerstvo financí,
+               ministerstvo školství a osvěty,
+               ministerstvo spravedlnosti,
+               ministerstvo informací,
+               ministerstvo průmyslu,
+               ministerstvo zemědělství,
+               ministerstvo vnitřního obchodu,
+               ministerstvo dopravy,
+               ministerstvo techniky,
+               ministerstvo pošt,
+               ministerstvo sociální péče,
+               ministerstvo zdravotnictví,
+               ministerstvo výživy,
+               ministerstvo pro sjednocení zákonů.
+          </paragraf>
+          <paragraf cislo="3">V ministerstvech zahraničních věcí, národní obrany a zahraničního obchodu jsou státní tajemníci, kteří jsou členy vlády. Je-li ministr Čech, bude státní tajemník Slovák a naopak. Místo státního tajemníka může zůstati neobsazeno.</paragraf>
+     </novela>
+</ustavni_zakon>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<ustavni_dekret
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:noNamespaceSchemaLocation="https://github.com/pirati-cz/docs/zakon-schema.xsd"
+     nazev="Ústavní dekret presidenta republiky o nové organisaci vlády a ministerstev v době přechodné"
+     sbirka="1945"
+     castka="1"
+     cislo="1"
+     datum_schvaleni="1945-04-02"
+     datum_platnosti="1945-04-04"
+     datum_ucinnosti="1945-04-02">
+     <paragraf cislo="1">Předseda vlády a pět jeho náměstků tvoří předsednictvo vlády. Náměstky předsedy vlády jmenuje a propouští president republiky.</paragraf>
+     <paragraf cislo="2">
+          V čele státní správy jsou tato ministerstva:
+          ministerstvo zahraničních věcí,
+          ministerstvo národní obrany,
+          ministerstvo zahraničního obchodu,
+          ministerstvo vnitra,
+          ministerstvo financí,
+          ministerstvo školství a osvěty,
+          ministerstvo spravedlnosti,
+          ministerstvo informací,
+          ministerstvo průmyslu,
+          ministerstvo zemědělství,
+          ministerstvo vnitřního obchodu,
+          ministerstvo dopravy,
+          ministerstvo pošt,
+          ministerstvo ochrany práce a sociální péče,
+          ministerstvo zdravotnictví,
+          ministerstvo výživy.
+     </paragraf>
+     <paragraf cislo="3">V ministerstvech zahraničních věcí, národní obrany a zahraničního obchodu jsou státní tajemníci, kteří jsou členy vlády. Je-li ministr Čech, bude státní tajemník Slovák a naopak.</paragraf>
+     <paragraf cislo="4">Vláda rozhoduje ve sboru, který je schopen usnášeti se, je-li přítomna nadpoloviční většina členů vlády.</paragraf>
+     <paragraf cislo="5">Působnost jednotlivých ministerstev upraví se zákonem. Podrobnosti stanoví vládní nařízení.</paragraf>
+     <paragraf cislo="6">Tento dekret nabývá účinnosti dnem podpisu. Provedou jej všichni členové vlády.</paragraf>
+</ustavni_dekret>
